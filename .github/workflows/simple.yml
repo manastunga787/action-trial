@@ -18,6 +18,7 @@ jobs:
           
   run-windows-command:
     runs-on: windows-latest
+    needs: ["run-shell-command"]
     steps:
       - name: print current directory in powershell
         run: Get-Location
