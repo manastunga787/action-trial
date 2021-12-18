@@ -10,14 +10,23 @@ jobs:
     steps:
       - name: echo a hello
         run: echo "hello Manas"
+
       - name: multiline script
         run: |
           node -v
           npm -v
-      - name: Python command
-        run: |
-          import platform
-          print
-          (platform.processor())
-        shell: python
+
+  run-windows-command
+    runs-on: windows-latest
+    steps:
+      - name: print current directory in powershell
+        run: Get-Location
+        
+      - name: print current directory in bash
+        run: pwd
+        shell: bash
+
+
+
+      
 
