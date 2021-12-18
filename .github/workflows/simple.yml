@@ -15,13 +15,13 @@ jobs:
         run: |
           node -v
           npm -v
-
-  run-windows-command
+          
+  run-windows-command:
     runs-on: windows-latest
     steps:
       - name: print current directory in powershell
         run: Get-Location
-        
+
       - name: print current directory in bash
         run: pwd
         shell: bash
