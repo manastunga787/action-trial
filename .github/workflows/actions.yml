@@ -9,7 +9,7 @@ jobs:
       - name: before checkout
         run: |
           pwd
-          ls
+          ls -a
 
       - name: checkout 
         uses: actions/checkout@v2
@@ -17,7 +17,7 @@ jobs:
       - name: after checkout
         run: |
           pwd
-          ls
+          ls -a
         
       
       # - name: Simple Js Action
